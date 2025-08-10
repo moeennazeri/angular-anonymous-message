@@ -1,0 +1,646 @@
+// .Main-text{
+// color: #5e6461;
+// font-size: 12px;
+// }
+// .container-fluid{
+//   background-color: #eaedf9;
+//   max-width: 800px;
+  
+// }
+// .main-container-fluid{
+//   background-color: #eaedf9;
+  
+// }
+// .h3{
+//   color: #2d2b2b;
+// }
+// .about-admin {
+//   margin-bottom: 20px;
+//   padding: 10px;
+//   border-radius: 28px;
+//   background-color: #eef0f8;
+//   color: gray;
+//   width: 17rem;
+// }
+// .text-message{
+//   color: #5e5763;
+//   font-size:13px //fs-1 fs-sm-1 fs-md-2 fs-lg-1;
+// }
+// .id-color{
+//   color: #d5d5d5;
+// }
+// .svgt {
+//   background-image: url('/images/Message/EndUserDefault.svg'); 
+//   background-repeat:  no-repeat;
+//   //  background-attachment: fixed;
+//   background-position: center;
+//   height: 11rem; 
+// }
+// .svgBox {
+  
+//   height: 12rem; 
+// }
+// .container-fluid {
+//   max-width: 500px;
+// }
+// .Main-card {
+//   background-color: #e6e8f0;
+//   box-shadow: 5px 6px 13px 5px rgba(0, 0, 0, 0.3), 5px 0 10px rgb(208 213 221);
+  
+// }
+// .chat-input{
+//   background-color: #e6e8f0;
+//   box-shadow: 5px 6px 13px 5px rgba(0, 0, 0, 0.3), 5px 0 10px rgb(208 213 221);
+// }
+// .explain{
+//   font-size: 10px;
+//   color: #707070;
+// }
+// .chat-input {
+//   background-color: #e6e8f0;
+// }
+
+// .rtl-inp {
+//   background-color: #e6e8f0;
+// }
+// .message-length {
+//   position: absolute;
+//   bottom: 8px;
+//   left: 12px;
+//   font-size: 0.8rem;
+//   color: gray;
+ 
+// }
+// /////////send button//////
+// .input-wrapper {
+ 
+//   width: fit-content;
+//   height: 35px;
+//   border-radius: 20px;  
+//   padding: 0px;
+//   box-sizing: content-box;
+//   display: flex;
+//   align-items: center;
+//   background-color: #292524;
+//   box-shadow: 5px 6px 13px 5px rgba(0, 0, 0, 0.3), 5px 0 10px rgb(208 213 221);
+// }
+
+// .icon {
+//   width: 30px;
+//   fill: rgb(255, 255, 255);
+//   margin-left: 8px;
+//   transition: all 0.3s;
+// }
+// .input {
+//   max-width: 170px;
+//   height: 100%;
+//   border: none;
+//   outline: none;
+//   padding-right: 30px;
+//   background-color: #292524;
+//   color: white;
+//   font-size: 1em;
+// }
+// .input:-webkit-autofill {
+//   -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+//   -webkit-text-fill-color: #ffffff;
+// }
+// .Subscribe-btn {
+//   height: 100%;
+//   width: 95px;
+//   border: none;
+//   border-radius: 15px;
+//   color: rgb(99, 42, 253);
+//   cursor: pointer;
+//   background-color: #e9e8eb;
+//   font-weight: 80;
+//   overflow: hidden;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: relative;
+//   transition: all 0.3s;
+//   font-size: 13px;
+// }
+// .arrow {
+//   /* display: none; */
+//   position: absolute;
+//   margin-right: 150px;
+//   transition: all 0.3s;
+// }
+// .input-wrapper:active .icon {
+//   transform: scale(1.3);
+// }
+// .Subscribe-btn:hover {
+//   color: white;
+// }
+// .Subscribe-btn:hover .arrow {
+//   margin-right: 0;
+//   animation: jello-vertical 0.9s both;
+//   transform-origin: right;
+// }
+
+// @keyframes jello-vertical {
+//   0% {
+//     transform: scale3d(1, 1, 1);
+//   }
+//   30% {
+//     transform: scale3d(0.75, 1.25, 1);
+//   }
+//   40% {
+//     transform: scale3d(1.25, 0.75, 1);
+//   }
+//   50% {
+//     transform: scale3d(0.85, 1.15, 1);
+//   }
+//   65% {
+//     transform: scale3d(1.05, 0.95, 1);
+//   }
+//   75% {
+//     transform: scale3d(0.95, 1.05, 1);
+//   }
+//   100% {
+//     transform: scale3d(1, 1, 1);
+//   }
+// }
+// .Subscribe-btn:active {
+//   transform: scale(0.9);
+// }
+
+
+// /* CSS کامپوننت والد شما (intro.component.scss یا مشابه آن) */
+
+// // .create-message-btn {
+// //   position: sticky;
+// //   bottom: 0px;
+// //   z-index: 10000;
+// //   padding: 8px 20px 40px; /* افزایش پدینگ پایین برای جبران بیرون زدگی دکمه */
+// //   font-size: 0.9rem;
+// //   background-color: rgba(255, 255, 255, 0.95); /* کمی افزایش شفافیت */
+// //   backdrop-filter: blur(8px); /* افزایش بلور برای جلوه نرم‌تر */
+// //   border-radius: 1rem;
+// //   display: flex;
+// //   flex-direction: column;
+// //   align-items: center;
+// //   justify-content: center;
+// //   width: 100%;
+// //   border-top: 1px solid rgba(0, 0, 0, 0.08); /* اضافه کردن یک خط ظریف در بالا */
+// //   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05); /* سایه ظریف برای عمق بیشتر */
+// // }
+
+// // .create-message-btn .btn {
+// //   margin-top: -30px; /* بالا کشیدن دکمه به سمت بیرون از فوتر */
+// //   position: relative; /* اطمینان از اینکه z-index کار می‌کند */
+// //   z-index: 10001; /* بالاتر بودن z-index از فوتر برای نمایش روی آن */
+// // }
+// .btn-primary-action {
+//   background-color: #632aca; 
+// }
+// .scroll-down-indicator {
+//   position: fixed;
+//   bottom: 0px;
+//   right: 1rem;
+//   margin-bottom: 5px; /* کاهش فاصله از دکمه */
+//   color: #632aca;
+//   animation: bounce 1.5s infinite;
+//   display: flex; /* استفاده از فلکس باکس برای تراز کردن بهتر */
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .scroll-arrow-icon {
+//   font-size: 1.5rem; /* کاهش اندازه فلش */
+//   display: block;
+// }
+
+// .scroll-text {
+//   font-size: 0.7rem; /* کاهش اندازه متن راهنما */
+//   font-weight: bold;
+//   white-space: nowrap; /* جلوگیری از شکسته شدن متن در خطوط مختلف */
+// }
+
+// @keyframes bounce {
+//   0%, 20%, 50%, 80%, 100% {
+//     transform: translateY(0);
+//   }
+//   40% {
+//     transform: translateY(-6px); /* تنظیم انیمیشن با اندازه جدید */
+//   }
+//   60% {
+//     transform: translateY(-3px); /* تنظیم انیمیشن با اندازه جدید */
+//   }
+// }
+
+// /* استایل برای متن "ساخته شده توسط مرکز نوآوری روزنه" */
+// .create-message-btn p.small.fw-light {
+//   font-size: 0.75rem; /* کمی کوچکتر کردن متن پایین */
+//   color: #888; /* کمی روشن‌تر کردن رنگ متن */
+//   margin-top: 10px; /* تنظیم فاصله */
+// }
+
+// /* اگر کلاس show-msg مربوط به نمایش پیام‌هاست و نیاز به تنظیمات فاصله بعد از فوتر دارد */
+// .show-msg {
+//   margin-top: 10px; /* این مقدار ممکن است نیاز به تنظیم داشته باشد */
+// }
+
+
+.popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+  }
+  
+  /* Popup container */
+  .popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 350px;
+    text-align: center;
+    opacity: 0;
+    animation: popupFadeIn 0.25s ease-out forwards;
+  }
+  
+  @keyframes popupFadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  /* Title */
+  .popup-content h2 {
+    color: #7038ec;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  /* Description */
+  .popup-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Input fields */
+  .input-popup {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #7038ec;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .input-popup:focus {
+    border-color: #5a2dbf;
+    box-shadow: 0 0 8px rgba(112, 56, 236, 0.5);
+  }
+  
+
+  
+  /* Buttons */
+  .btn-popup  {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-success-popup {
+    background-color: #7038ec;
+    color: white;
+  }
+  
+  .btn-success-popup:hover {
+    background-color: #5a2dbf;
+    box-shadow: 0px 4px 10px rgba(112, 56, 236, 0.4);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -55%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+//   ///////load//////
+// .loading-overlay {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(255, 255, 255, 0.8);
+//   z-index: 9999;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .spinner {
+//   border: 6px solid #f3f3f3;
+//   border-top: 6px solid #3498db;
+//   border-radius: 50%;
+//   width: 60px;
+//   height: 60px;
+//   animation: spin 1s linear infinite;
+// }
+
+// .loading-text {
+//   margin-top: 10px;
+//   font-size: 1.2rem;
+//   color: #333;
+// }
+
+// @keyframes spin {
+//   0% { transform: rotate(0deg); }
+//   100% { transform: rotate(360deg); }
+// }
+// .svg2{
+//   width: 18rem;
+//   height: 11rem;
+ 
+// }
+
+
+///////
+
+
+
+
+.container-fluid{
+  max-width: 750px;
+}
+.Main-text{
+color: #fff;
+font-size: 10px;
+}
+.h3{
+  color: #fff;
+  font-size: larger;
+}
+.enter{
+  background-color: #ffff;
+  
+}
+  .Main-card {
+  background-color: #fff;
+      box-shadow: -10px -10px 13px 5px rgb(78 78 78 / 30%), 5px 0 10px rgb(208, 213, 221);
+    margin: 10px;
+    padding: 3px;
+    border-radius: 20px;
+}
+.header{
+      border-radius: 10px;
+      background-color: #6a1df7;
+}
+
+.about{
+  color: #a449ff;
+}
+.about-1{
+  font-size: 0.5rem;
+}
+.about-2{
+  font-size: 0.75rem;
+}
+.main-svg{
+  width: 10rem;
+  height: 9rem;
+}
+
+.custom-box {
+    background-color: #c9c3fa;; /* بنفش روشن */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+    align-items: center;
+}
+.send-button{
+  padding-bottom: 9px;
+}
+.box-header {
+    padding-right: 8px;
+    padding-top: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ← تغییر این خط */
+}
+
+.header-left {
+    flex-grow: 1;
+    text-align: right; /* برای راست‌چین کردن متن فارسی */
+    padding-left: 20px; /* فاصله از SVG */
+}
+
+.header-left p {
+    margin: 0;
+    line-height: 1.5;
+    color: #333;
+    position: relative;
+    top: -2px;
+    font-size: smaller;
+}
+
+.header-right {
+    flex-shrink: 0;
+    margin-left: 12px; /* فاصله از متن */
+}
+
+
+.large-input {
+    height: 100px; /* ارتفاع بیشتر برای اینپوت */
+    resize: vertical; /* امکان تغییر اندازه عمودی */
+    padding: 10px;
+    font-size: 1rem;
+    text-align: right; /* برای راست‌چین کردن متن فارسی */
+}
+
+.box-footer {
+    display: flex;
+    justify-content: center; /* برای قرار دادن دکمه در وسط پایین */
+    width: 100%;
+}
+
+.bootstrap-send-button {
+    width: auto; /* عرض دکمه را به محتوای آن محدود می‌کند */
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
+.message-length {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  font-size: 0.8rem;
+  color: gray;
+ 
+}
+
+/////////send button//////
+.input-wrapper {
+  height: 35px;
+  border-radius: 20px;  
+  padding: 0px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  background-color: #292524;
+  box-shadow: 5px 6px 13px 5px rgba(0, 0, 0, 0.3), 5px 0 10px rgb(208 213 221);
+}
+
+.icon {
+  width: 30px;
+  fill: rgb(255, 255, 255);
+  margin-left: 8px;
+  transition: all 0.3s;
+}
+.input {
+  max-width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-right: 30px;
+  background-color: #292524;
+  color: white;
+  font-size: 1em;
+}
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+  -webkit-text-fill-color: #ffffff;
+}
+.Subscribe-btn {
+  height: 100%;
+  width: 95px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(99, 42, 253);
+  cursor: pointer;
+  background-color: #e9e8eb;
+  font-weight: 80;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+  font-size: 13px;
+}
+.arrow {
+  /* display: none; */
+  position: absolute;
+  margin-right: 150px;
+  transition: all 0.3s;
+}
+.input-wrapper:active .icon {
+  transform: scale(1.3);
+}
+.Subscribe-btn:hover {
+  color: white;
+}
+.Subscribe-btn:hover .arrow {
+  margin-right: 0;
+  animation: jello-vertical 0.9s both;
+  transform-origin: right;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.Subscribe-btn:active {
+  transform: scale(0.9);
+}
+/////footer//
+.sticky-footer {
+      position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #080808;
+    box-shadow: 7px -8px 10px rgba(204, 200, 200, 0.795);
+    height: 50px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 20px; /* فاصله بین دکمه‌ها */
+    flex-wrap: wrap; /* اجازه می‌دهد دکمه‌ها در صفحه‌های کوچک‌تر به خط بعدی بروند */
+    justify-content: center; /* دکمه‌ها را در صورت رفتن به خط بعدی، وسط‌چین می‌کند */
+}
+
+.oval-button {
+    background-color: #8a8a8a; /* زغال‌سنگی کمی روشن‌تر برای دکمه */
+    color: rgb(238, 197, 34);
+    border: none;
+    border-radius: 50px; /* دکمه را بیضی می‌کند */
+    padding: 6px 17px;
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* انیمیشن نرم هنگام هاور */
+    white-space: nowrap; /* از شکسته شدن متن داخل دکمه جلوگیری می‌کند */
+}
+
+.oval-button:hover {
+    background-color: #777; /* تیره تر شدن هنگام هاور */
+}
+a {
+  text-decoration: none;
+}

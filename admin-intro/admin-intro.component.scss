@@ -1,0 +1,656 @@
+/* برای بردر پایین و حذف دیگر بخش‌ها */
+.form-control {
+  border: none;
+  border-bottom: 2px solid #ccc; /* رنگ و ضخامت خط پایین */
+}
+.svgBox {
+  
+  height: 12rem; 
+}
+.error-message-popup {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.input-popup{
+  direction: rtl;
+}
+
+.Main {
+  max-width: 900px;
+}
+.Main-icon{
+  padding: 3px;
+}
+.Main-text{
+  font-size: 0.75rem;
+  color: gray;
+
+}
+.rr {
+  background-color: #e6e8f0;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+input::placeholder {
+  font-size: 0.75rem; /* کوچک‌تر کردن اندازه */
+  color: gray; /* تغییر رنگ */
+  opacity: 1; /* حذف شفافیت */
+}
+.svgt {
+  background-image: url('/images/Message/EndUserDefault.svg'); 
+  background-repeat:  no-repeat;
+  //  background-attachment: fixed;
+  background-position: center;
+  height: 11rem; 
+}
+.input-group-text {
+  
+  border: none; /* حذف کادر اطراف ایکون */
+  border-right: 1px solid #818CF8 ;
+  border-top: 1px solid #818CF8 ;
+  border-bottom: 1px solid #818CF8 ;
+  color: #818CF8 ; /* رنگ بنفش تیره برای ایکون */
+  margin-top: 26px;
+  height: 41px;
+  
+}
+
+.input-group-text i {
+  font-size: 1.2rem; /* اندازه ایکون */
+}
+
+.pl-3 {
+  padding-left: 2rem; /* فضای بین ایکون و متن */
+  background-color: #e6e8f0;
+}
+.border-left-0 {
+  border-left: none; /* حذف بوردر چپ در فیلد ورودی */
+}
+
+.border-left-2 {
+  border-left: 2px solid #ccc; /* اضافه کردن بوردر چپ برای ایکون */
+}
+
+.btn {
+  background-color: #e6e8f0;
+}
+/* تنظیمات دکمه */
+.btn-custom {
+  background-color: #7038ec;
+  color: white;
+  border-radius: 39px;
+  font-size: 1rem;
+  border: none;
+  position: relative;
+  top: 38px;
+
+}
+
+.btn-custom:hover {
+  background-color: #5c1fa2; /* رنگ دکمه در حالت هاور */
+  transition: background-color 0.3s ease;
+}
+
+
+////////////svg///////////////
+
+.Main-svg {
+  width: 16rem;
+  height: auto;
+}
+.card {
+  box-shadow: 0 4px 10px rgb(154 154 154 / 52%);
+  margin-bottom: 3rem;
+  border: none;
+  background-color: #e6e8f0;
+}
+////////////popup/////////////////////////////////
+/* Backdrop for the popup */
+.popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+  }
+  
+  /* Popup container */
+  .popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 350px;
+    text-align: center;
+    opacity: 0;
+    animation: popupFadeIn 0.25s ease-out forwards;
+  }
+  
+  @keyframes popupFadeIn {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  /* Title */
+  .popup-content h2 {
+    color: #7038ec;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  /* Description */
+  .popup-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Input fields */
+  .input-popup {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #7038ec;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .input-popup:focus {
+    border-color: #5a2dbf;
+    box-shadow: 0 0 8px rgba(112, 56, 236, 0.5);
+  }
+  
+
+  
+  /* Buttons */
+  .btn-popup  {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-success-popup {
+    background-color: #7038ec;
+    color: white;
+  }
+  
+  .btn-success-popup:hover {
+    background-color: #5a2dbf;
+    box-shadow: 0px 4px 10px rgba(112, 56, 236, 0.4);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -55%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+/////////////////////div of success link///////
+  .success-alert {
+    background: #eaedf9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+ /* Success message */
+.success-link {
+  border: 1px solid #497b62;  /* مرز سبز ملایم */
+  color: #4d9f73;  /* رنگ متن سبز تیره برای خوانایی بیشتر */
+  padding: 5px;
+  border-radius: 37px;
+  
+  font-weight: bold;
+  margin-bottom: 12px;
+  /* سایه ملایم برای پس‌زمینه */
+  box-shadow: 0px 4px 10px rgba(77, 159, 115, 0.2);
+  gap: 8px;
+  /* انیمیشن ظاهر شدن */
+  animation: fadeIn 0.8s ease-out;
+  /* تغییر رنگ پیام هنگام هاور */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* افکت سایه برای آیکون */
+.success-link i {
+  transition: transform 0.3s ease;
+}
+
+
+/* انیمیشن ظهور پیام */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  ////////// finishhh /successs ///////
+  /* Inner div for button */
+  .inner-div {
+    margin-top: 8px;
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    background-color: #7038ec;
+    color: white;
+    padding: 8px 19px;
+    border: none;
+    border-radius: 21px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    transition: background-color 0.5s ease-in-out; /* انیمیشن نرم تغییر رنگ */
+  }
+  
+  .btn-primary:hover {
+    background-color: #5a2dbf;
+  }
+  
+  /* Input field styling */
+  .link-show  {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  /* Paddings and spacing for platform icons section */
+  .inner-div p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Platform buttons container */
+  .inner-div.p-3 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inner-div a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 8px;
+    transition: 0.3s;
+  }
+  
+  .inner-div a:hover {
+    transform: scale(1.1);
+  }
+
+/////////////////////babtycard////
+/// 
+.baby-card{
+  box-shadow:0 4px 10px rgb(154 154 154 / 52%) ;
+  padding-top: 25px;
+  border-radius: 20px;
+  
+}
+
+  ///////////////input write message////////
+
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+  max-width: 240px;
+}
+
+.coolinput label.text {
+  font-size: 0.75rem;
+  color: #818CF8;
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #e8e8e8;
+  width: fit-content;
+}
+
+.coolinput input[type=text].input {
+  padding: 11px 10px;
+  border: 2px #818CF8 solid;
+  border-radius: 5px;
+  background: #e8e8e8;
+}
+
+.coolinput input[type=text].input:focus {
+  outline: none;
+}
+///////////////link and copy////////
+.link-display {
+  padding: 10px;  // اضافه کردن فضای داخلی
+  // width: 360px;
+  word-wrap: break-word;  // جلوگیری از شکست لینک در خطوط
+}
+
+.btn-success {
+  border-radius: 8px;  // گوشه‌های گرد برای دکمه
+  font-weight: bold;  // ایجاد تاکید روی دکمه
+  background-color: #28a745;  // رنگ پس‌زمینه دکمه
+  color: white;  // رنگ متن دکمه
+}
+.main-link{
+ border-bottom: 1px solid gray;
+ 
+}
+
+
+//////////
+/* From Uiverse.io by Galahhad */ 
+/* tooltip settings 👇 */
+
+.copy {
+  /* button */
+  --button-bg: #47ad43;
+  --button-hover-bg: #33c633;
+  --button-text-color: #CCCCCC;
+  --button-hover-text-color: #8bb9fe;
+  --button-border-radius: 10px;
+  --button-diameter: 36px;
+  --button-outline-width: 1px;
+  --button-outline-color: rgb(159, 182, 236);
+  --tooltip-bg: #f4f3f3;
+  --toolptip-border-radius: 4px;
+  --tooltip-font-family: Menlo, Roboto Mono, monospace;
+  --tooltip-font-size: 12px;
+  --tootip-text-color: rgb(50, 50, 50);
+  --tooltip-padding-x: 7px;
+  --tooltip-padding-y: 7px;
+  --tooltip-offset: 8px;
+ 
+}
+
+.copy {
+  box-sizing: border-box;
+  width: var(--button-diameter);
+  height: var(--button-diameter);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-bg);
+  color: var(--button-text-color);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+
+.tooltip {
+  position: absolute;
+  opacity: 0;
+  visibility: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font: var(--tooltip-font-size) var(--tooltip-font-family);
+  color: var(--tootip-text-color);
+  background: var(--tooltip-bg);
+  padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
+  border-radius: var(--toolptip-border-radius);
+  pointer-events: none;
+  transition: all var(--tooltip-transition-duration) cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+  content: attr(data-text-initial);
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: calc(var(--tooltip-padding-y) / 2 * -1);
+  width: var(--tooltip-padding-y);
+  height: var(--tooltip-padding-y);
+  background: inherit;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -999;
+  pointer-events: none;
+}
+
+.copy svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkmark {
+  display: none;
+}
+
+/* actions */
+
+.copy:hover .tooltip,
+.copy:focus:not(:focus-visible) .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: calc((100% + var(--tooltip-offset)) * -1);
+}
+
+.copy:focus:not(:focus-visible) .tooltip::before {
+  content: attr(data-text-end);
+}
+
+.copy:focus:not(:focus-visible) .clipboard {
+  display: none;
+}
+
+.copy:focus:not(:focus-visible) .checkmark {
+  display: block;
+}
+
+.copy:hover,
+.copy:focus {
+  background-color: var(--button-hover-bg);
+}
+
+.copy:active {
+  outline: var(--button-outline-width) solid var(--button-outline-color);
+}
+
+.copy:hover svg {
+  color: var(--button-hover-text-color);
+}
+////////share link///////
+
+.link-share{
+  border-radius: 20px;
+  padding: 12px;
+}
+
+//////////share////////
+.svg-share {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow: hidden; /* مهم: جلو بیرون زدن رو میگیره */
+  white-space: normal; /* اطمینان که بشکنه */
+  gap: 2.4rem;
+  transition: max-height 0.24s ease;
+  max-height: 115px;
+  align-items: center;
+}
+
+.svg-c {
+  width: 100%; /* مهم: svg-c هم باید عرض کامل بگیره */
+  overflow: hidden;
+}
+
+
+.svg-share.expanded {
+  flex-wrap: wrap;
+  overflow: visible;
+  max-height: 500px; /* باز شدن کامل */
+}
+
+.svg-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+  flex-shrink: 0; /* نمیذاره آیکون ها له بشن */
+}
+
+.menu-button {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+//pupup/////
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-card {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 370px;
+  width: 95%;
+  padding: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.popup-animate {
+  animation: popupShow 0.5s ease forwards;
+  transform-origin: center center;
+  opacity: 0;
+  transform: scale(0.8);
+}
+@keyframes popupShow {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.close-popup-btn {
+  /* ... سایر استایل‌ها ... */
+
+  background: none; /* اطمینان حاصل کنید که هیچ پس‌زمینه‌ای ندارد */
+  border: none; /* اطمینان حاصل کنید که هیچ بوردر (کادر) ندارد */
+  outline: none; /* برای حذف outline که هنگام فوکوس روی دکمه ظاهر می‌شود */
+  box-shadow: none; /* برای حذف هرگونه سایه ناخواسته */
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
+  transition: color 0.3s;
+}
+.close-btn:hover {
+  color: #dc3545;
+}
+
+.link-box-custom {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+.link-box-custom a {
+  color: #0d6efd; /* Bootstrap Primary */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.link-box-custom a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-icon-sm {
+  width: 30px;
+  height: 30px;
+  margin: 6px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.social-icon-sm:hover {
+  transform: scale(1.2);
+}
+
+.qr-code-container {
+  background: #fefefe;
+  padding: 12px;
+  border-radius: 16px;
+  display: inline-block;
+}
+.copied-tooltip {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+.btn-gradient-purple {
+  background: linear-gradient(#7f00ff);
+  border: none;
+  transition: 0.3s ease;
+}
+.btn-gradient-purple:hover {
+  opacity: 0.9;
+}
+
+
+
